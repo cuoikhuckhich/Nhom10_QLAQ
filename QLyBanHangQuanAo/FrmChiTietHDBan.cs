@@ -56,10 +56,6 @@ namespace QLyBanHangQuanAo
             txtGiamGia.Text = dataGridView_ChiTietHDBan.CurrentRow.Cells["Giamgia"].Value.ToString();
             cboMaquanao.Text = dataGridView_ChiTietHDBan.CurrentRow.Cells["Maquanao"].Value.ToString();
             cboSoHDB.Text = dataGridView_ChiTietHDBan.CurrentRow.Cells["SoHDB"].Value.ToString();
-            
-            //  Maquanao = dataGridView_ChiTietHDBan.CurrentRow.Cells["Maquanao"].Value.ToString();
-            //  sql = "SELECT  FROM SanPham WHERE Maquanao=N'" + Maquanao + "'";
-            //  cboMaquanao.Text = Functions.Duongdananh(sql);
             txtSoLuong.Text = dataGridView_ChiTietHDBan.CurrentRow.Cells["Soluong"].Value.ToString();
             txtThanhTien.Text = dataGridView_ChiTietHDBan.CurrentRow.Cells["Thanhtien"].Value.ToString();
             cboSoHDB.Enabled = false;
@@ -87,6 +83,7 @@ namespace QLyBanHangQuanAo
         private void btnLuu_Click(object sender, EventArgs e)
         {
             string sql;
+            double sl,slcon;
             if (cboSoHDB.Text.Trim().Length==0 )
             {
                 MessageBox.Show("Bạn phải nhập SoHDB", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -122,19 +119,26 @@ namespace QLyBanHangQuanAo
                 return;
 
             }
-            sql = "select SoHDB from ChitietHDBan Where SoHDB=N'" + cboSoHDB.SelectedValue.ToString() + "'";
-            if (Class.Functions.CheckKey(sql))
+             
+            //   kiemtra sô lương hàng còn tồn tại trong kho
+
+            sl = Convert.ToDouble(Functions.Duongdananh("SELECT SoLuong FROM SanPham WHERE Maquanao = N'" + cboMaquanao.SelectedValue.ToString() + "'"));
+            if (Convert.ToDouble(txtSoLuong.Text) > sl)
             {
-                MessageBox.Show("Số Hóa Đơn đã có ,bạn phải nhập Số Hóa Đơn  khác ", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-               cboSoHDB.Focus();
+                MessageBox.Show("Số lượng mặt hàng này chỉ còn " + sl, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txtSoLuong.Text = "";
+                txtSoLuong.Focus();
                 return;
             }
+
              sql = " Insert into ChiTietHDBan(SoHDB, Maquanao, Soluong, Giamgia, Thanhtien) values('" + cboSoHDB.SelectedValue.ToString() + "','" + cboMaquanao.SelectedValue.ToString() + "','" + txtSoLuong.Text + "','" + txtGiamGia.Text + "','" + txtThanhTien.Text + "')";
-
-
             Class.Functions.RunSql(sql);
-            
             loadDataToGridView();
+            // Cập nhật lại số lượng của mặt hàng vào bảng tblHang
+            slcon = sl - Convert.ToDouble(txtSoLuong.Text);
+            sql = "UPDATE SanPham SET Soluong =" + slcon + " WHERE Maquanao= N'" + cboMaquanao.SelectedValue.ToString() + "'";
+            Functions.RunSql(sql);
+            resetvalues();
             resetvalues();
 
         }

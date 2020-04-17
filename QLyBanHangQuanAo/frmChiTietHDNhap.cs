@@ -95,7 +95,7 @@ namespace QLyBanHangQuanAo
         private void btnLuu_Click(object sender, EventArgs e)
         {
             string sql;
-        
+        double sl, slmoi;
             if (cboSoHDN.Text.Trim().Length == 0)
             {
                 MessageBox.Show("Bạn phải nhập SoHDB", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -131,17 +131,17 @@ namespace QLyBanHangQuanAo
                 return;
 
             }
-            sql = "select SoHDN from ChiTietHDNhap Where SoHDN=N'" + cboSoHDN.SelectedValue.ToString() + "'";
-            if (Class.Functions.CheckKey(sql))
-            {
-                MessageBox.Show("Số Hóa Đơn đã có ,bạn phải nhập Số Hóa Đơn  khác ", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                cboSoHDN.Focus();
-                return;
-            }
+           
             sql = " Insert into ChiTietHDNhap(SoHDN, Maquanao, Soluong,Dongia, Giamgia, Thanhtien) values('" + cboSoHDN.SelectedValue.ToString() + "','" + cboMaquanao.SelectedValue.ToString() + "','" + txtSoluong.Text +"','"+txtDongia.Text+ "','" + txtGiamgia.Text + "','" + txtThanhtien.Text + "')";
             Class.Functions.RunSql(sql);
-
             loadDataGridView();
+             sl = Convert.ToDouble(Functions.Duongdananh("SELECT SoLuong FROM SanPham WHERE Maquanao = N'" + cboMaquanao.SelectedValue.ToString() + "'"));
+            // Cập nhật lại số lượng của mặt hàng vào bảng tblHang
+            slmoi = sl + Convert.ToDouble(txtSoluong.Text);
+            sql = "UPDATE SanPham SET Soluong =" + slmoi + " WHERE Maquanao= N'" + cboMaquanao.SelectedValue.ToString() + "'";
+            Functions.RunSql(sql);
+       
+            resetvalue();
             resetvalue();
         }
 
