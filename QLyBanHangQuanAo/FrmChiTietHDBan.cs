@@ -51,8 +51,6 @@ namespace QLyBanHangQuanAo
       
         private void dataGridView_ChiTietHDBan_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            string Maquanao;
-            string sql;
             txtGiamGia.Text = dataGridView_ChiTietHDBan.CurrentRow.Cells["Giamgia"].Value.ToString();
             cboMaquanao.Text = dataGridView_ChiTietHDBan.CurrentRow.Cells["Maquanao"].Value.ToString();
             cboSoHDB.Text = dataGridView_ChiTietHDBan.CurrentRow.Cells["SoHDB"].Value.ToString();

@@ -153,5 +153,19 @@ namespace QLyBanHangQuanAo
             bc.MdiParent = this;
             bc.Show();
         }
+
+        private void sảnPhẩmToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmtimkiemsanpham tk = new frmtimkiemsanpham();
+            tk.MdiParent = this;
+            tk.Show();
+        }
+
+        private void báoCáoDSHóaĐơnNhậpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmbaocaohdn bc = new frmbaocaohdn();
+            bc.MdiParent = this;
+            bc.Show();
+        }
     }
 }

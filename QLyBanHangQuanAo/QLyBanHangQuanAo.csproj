@@ -80,6 +80,12 @@
     <Compile Include="FrmBaoCao.Designer.cs">
       <DependentUpon>FrmBaoCao.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmbaocaohdn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmbaocaohdn.designer.cs">
+      <DependentUpon>frmbaocaohdn.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmChatLieu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -176,6 +182,12 @@
     <Compile Include="frmTheLoai.Designer.cs">
       <DependentUpon>frmTheLoai.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmtimkiemsanpham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmtimkiemsanpham.designer.cs">
+      <DependentUpon>frmtimkiemsanpham.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QlyBanHangQuanAoDataSet.Designer.cs">
@@ -189,6 +201,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmBaoCao.resx">
       <DependentUpon>FrmBaoCao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmbaocaohdn.resx">
+      <DependentUpon>frmbaocaohdn.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmChatLieu.resx">
       <DependentUpon>FrmChatLieu.cs</DependentUpon>
@@ -237,6 +252,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmTheLoai.resx">
       <DependentUpon>frmTheLoai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmtimkiemsanpham.resx">
+      <DependentUpon>frmtimkiemsanpham.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

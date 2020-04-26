@@ -45,33 +45,37 @@
             // 
             // txtMamau
             // 
-            this.txtMamau.Location = new System.Drawing.Point(124, 58);
+            this.txtMamau.Location = new System.Drawing.Point(186, 89);
+            this.txtMamau.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtMamau.Name = "txtMamau";
-            this.txtMamau.Size = new System.Drawing.Size(176, 20);
+            this.txtMamau.Size = new System.Drawing.Size(262, 26);
             this.txtMamau.TabIndex = 0;
             // 
             // txtTenmau
             // 
-            this.txtTenmau.Location = new System.Drawing.Point(124, 112);
+            this.txtTenmau.Location = new System.Drawing.Point(186, 172);
+            this.txtTenmau.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtTenmau.Name = "txtTenmau";
-            this.txtTenmau.Size = new System.Drawing.Size(176, 20);
+            this.txtTenmau.Size = new System.Drawing.Size(262, 26);
             this.txtTenmau.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(35, 58);
+            this.label1.Location = new System.Drawing.Point(52, 89);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 13);
+            this.label1.Size = new System.Drawing.Size(66, 20);
             this.label1.TabIndex = 2;
             this.label1.Text = "Mã Màu";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(35, 115);
+            this.label2.Location = new System.Drawing.Point(52, 177);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(50, 13);
+            this.label2.Size = new System.Drawing.Size(71, 20);
             this.label2.TabIndex = 3;
             this.label2.Text = "Tên Màu";
             // 
@@ -81,9 +85,11 @@
             this.DataGridView_Mau.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Mamau,
             this.Tenmau});
-            this.DataGridView_Mau.Location = new System.Drawing.Point(49, 169);
+            this.DataGridView_Mau.Location = new System.Drawing.Point(74, 260);
+            this.DataGridView_Mau.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.DataGridView_Mau.Name = "DataGridView_Mau";
-            this.DataGridView_Mau.Size = new System.Drawing.Size(416, 145);
+            this.DataGridView_Mau.RowHeadersWidth = 62;
+            this.DataGridView_Mau.Size = new System.Drawing.Size(624, 223);
             this.DataGridView_Mau.TabIndex = 4;
             this.DataGridView_Mau.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView_Mau_CellClick);
             // 
@@ -91,19 +97,24 @@
             // 
             this.Mamau.DataPropertyName = "Mamau";
             this.Mamau.HeaderText = "Mã Màu";
+            this.Mamau.MinimumWidth = 8;
             this.Mamau.Name = "Mamau";
+            this.Mamau.Width = 150;
             // 
             // Tenmau
             // 
             this.Tenmau.DataPropertyName = "Tenmau";
             this.Tenmau.HeaderText = "Tên Màu";
+            this.Tenmau.MinimumWidth = 8;
             this.Tenmau.Name = "Tenmau";
+            this.Tenmau.Width = 150;
             // 
             // btnThem
             // 
-            this.btnThem.Location = new System.Drawing.Point(49, 366);
+            this.btnThem.Location = new System.Drawing.Point(74, 563);
+            this.btnThem.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(69, 31);
+            this.btnThem.Size = new System.Drawing.Size(104, 48);
             this.btnThem.TabIndex = 5;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
@@ -111,9 +122,10 @@
             // 
             // btnThoat
             // 
-            this.btnThoat.Location = new System.Drawing.Point(658, 366);
+            this.btnThoat.Location = new System.Drawing.Point(987, 563);
+            this.btnThoat.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(69, 31);
+            this.btnThoat.Size = new System.Drawing.Size(104, 48);
             this.btnThoat.TabIndex = 6;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
@@ -121,9 +133,10 @@
             // 
             // btnXoa
             // 
-            this.btnXoa.Location = new System.Drawing.Point(530, 366);
+            this.btnXoa.Location = new System.Drawing.Point(795, 563);
+            this.btnXoa.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(69, 31);
+            this.btnXoa.Size = new System.Drawing.Size(104, 48);
             this.btnXoa.TabIndex = 7;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
@@ -131,9 +144,10 @@
             // 
             // btnLuu
             // 
-            this.btnLuu.Location = new System.Drawing.Point(385, 366);
+            this.btnLuu.Location = new System.Drawing.Point(578, 563);
+            this.btnLuu.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(69, 31);
+            this.btnLuu.Size = new System.Drawing.Size(104, 48);
             this.btnLuu.TabIndex = 8;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.UseVisualStyleBackColor = true;
@@ -141,9 +155,10 @@
             // 
             // btnSua
             // 
-            this.btnSua.Location = new System.Drawing.Point(219, 366);
+            this.btnSua.Location = new System.Drawing.Point(328, 563);
+            this.btnSua.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(69, 31);
+            this.btnSua.Size = new System.Drawing.Size(104, 48);
             this.btnSua.TabIndex = 9;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
@@ -151,9 +166,9 @@
             // 
             // FrmMau
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1200, 692);
             this.Controls.Add(this.btnSua);
             this.Controls.Add(this.btnLuu);
             this.Controls.Add(this.btnXoa);
@@ -164,8 +179,9 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtTenmau);
             this.Controls.Add(this.txtMamau);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FrmMau";
-            this.Text = "FrmMau";
+            this.Text = "Màu";
             this.Load += new System.EventHandler(this.FrmMau_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView_Mau)).EndInit();
             this.ResumeLayout(false);

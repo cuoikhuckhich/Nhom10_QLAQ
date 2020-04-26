@@ -46,33 +46,37 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(51, 89);
+            this.label1.Location = new System.Drawing.Point(76, 137);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 13);
+            this.label1.Size = new System.Drawing.Size(103, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Mã Chất Liệu";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(51, 163);
+            this.label2.Location = new System.Drawing.Point(76, 251);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(74, 13);
+            this.label2.Size = new System.Drawing.Size(108, 20);
             this.label2.TabIndex = 1;
             this.label2.Text = "Tên Chất Liệu";
             // 
             // txtMachatlieu
             // 
-            this.txtMachatlieu.Location = new System.Drawing.Point(162, 81);
+            this.txtMachatlieu.Location = new System.Drawing.Point(243, 125);
+            this.txtMachatlieu.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtMachatlieu.Name = "txtMachatlieu";
-            this.txtMachatlieu.Size = new System.Drawing.Size(193, 20);
+            this.txtMachatlieu.Size = new System.Drawing.Size(288, 26);
             this.txtMachatlieu.TabIndex = 2;
             // 
             // txtTenchatlieu
             // 
-            this.txtTenchatlieu.Location = new System.Drawing.Point(162, 160);
+            this.txtTenchatlieu.Location = new System.Drawing.Point(243, 246);
+            this.txtTenchatlieu.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtTenchatlieu.Name = "txtTenchatlieu";
-            this.txtTenchatlieu.Size = new System.Drawing.Size(193, 20);
+            this.txtTenchatlieu.Size = new System.Drawing.Size(288, 26);
             this.txtTenchatlieu.TabIndex = 3;
             // 
             // DataGridView_ChatLieu
@@ -81,9 +85,11 @@
             this.DataGridView_ChatLieu.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Machatlieu,
             this.Tenchatlieu});
-            this.DataGridView_ChatLieu.Location = new System.Drawing.Point(162, 245);
+            this.DataGridView_ChatLieu.Location = new System.Drawing.Point(243, 377);
+            this.DataGridView_ChatLieu.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.DataGridView_ChatLieu.Name = "DataGridView_ChatLieu";
-            this.DataGridView_ChatLieu.Size = new System.Drawing.Size(246, 114);
+            this.DataGridView_ChatLieu.RowHeadersWidth = 62;
+            this.DataGridView_ChatLieu.Size = new System.Drawing.Size(369, 175);
             this.DataGridView_ChatLieu.TabIndex = 4;
             this.DataGridView_ChatLieu.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView_ChatLieu_CellClick);
             this.DataGridView_ChatLieu.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView_ChatLieu_CellContentClick);
@@ -92,19 +98,24 @@
             // 
             this.Machatlieu.DataPropertyName = "Machatlieu";
             this.Machatlieu.HeaderText = "Mã Chất Liệu";
+            this.Machatlieu.MinimumWidth = 8;
             this.Machatlieu.Name = "Machatlieu";
+            this.Machatlieu.Width = 150;
             // 
             // Tenchatlieu
             // 
             this.Tenchatlieu.DataPropertyName = "Tenchatlieu";
             this.Tenchatlieu.HeaderText = "Tên Chất Liệu";
+            this.Tenchatlieu.MinimumWidth = 8;
             this.Tenchatlieu.Name = "Tenchatlieu";
+            this.Tenchatlieu.Width = 150;
             // 
             // btnThem
             // 
-            this.btnThem.Location = new System.Drawing.Point(60, 388);
+            this.btnThem.Location = new System.Drawing.Point(90, 597);
+            this.btnThem.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(65, 28);
+            this.btnThem.Size = new System.Drawing.Size(98, 43);
             this.btnThem.TabIndex = 5;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
@@ -112,9 +123,10 @@
             // 
             // btnXoa
             // 
-            this.btnXoa.Location = new System.Drawing.Point(204, 388);
+            this.btnXoa.Location = new System.Drawing.Point(306, 597);
+            this.btnXoa.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(65, 28);
+            this.btnXoa.Size = new System.Drawing.Size(98, 43);
             this.btnXoa.TabIndex = 6;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
@@ -122,9 +134,10 @@
             // 
             // btnLuu
             // 
-            this.btnLuu.Location = new System.Drawing.Point(479, 388);
+            this.btnLuu.Location = new System.Drawing.Point(718, 597);
+            this.btnLuu.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(65, 28);
+            this.btnLuu.Size = new System.Drawing.Size(98, 43);
             this.btnLuu.TabIndex = 7;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.UseVisualStyleBackColor = true;
@@ -132,9 +145,10 @@
             // 
             // btnThoat
             // 
-            this.btnThoat.Location = new System.Drawing.Point(640, 388);
+            this.btnThoat.Location = new System.Drawing.Point(960, 597);
+            this.btnThoat.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(65, 28);
+            this.btnThoat.Size = new System.Drawing.Size(98, 43);
             this.btnThoat.TabIndex = 8;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
@@ -142,9 +156,10 @@
             // 
             // btnSua
             // 
-            this.btnSua.Location = new System.Drawing.Point(353, 388);
+            this.btnSua.Location = new System.Drawing.Point(530, 597);
+            this.btnSua.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(68, 28);
+            this.btnSua.Size = new System.Drawing.Size(102, 43);
             this.btnSua.TabIndex = 9;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
@@ -152,9 +167,9 @@
             // 
             // FrmChatLieu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1200, 692);
             this.Controls.Add(this.btnSua);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnLuu);
@@ -165,8 +180,9 @@
             this.Controls.Add(this.txtMachatlieu);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FrmChatLieu";
-            this.Text = "FrmChatLieu";
+            this.Text = "Chất Liệu";
             this.Load += new System.EventHandler(this.FrmChatLieu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView_ChatLieu)).EndInit();
             this.ResumeLayout(false);

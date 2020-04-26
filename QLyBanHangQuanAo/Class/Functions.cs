@@ -19,7 +19,7 @@ namespace QLyBanHangQuanAo.Class
 
         public static void ketnoi()
         {
-            stringcon = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=QlyBanHangQuanAo;Integrated Security=True";
+            stringcon = "Data Source=.;Initial Catalog=QlyBanHangQuanAo;Integrated Security=True";
             con = new SqlConnection();
             con.ConnectionString = stringcon;
             con.Open();
@@ -107,6 +107,18 @@ namespace QLyBanHangQuanAo.Class
             cbo.ValueMember = ma; //Trường giá trị
           //  cbo.DisplayMember = ma; //Trường hiển thị
         }
-
+        public static string GetFieldValues(string sql)
+        {
+            string ma = "";
+            SqlCommand cmd = new SqlCommand(sql, Functions.con);
+            SqlDataReader reader;
+            reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                ma = reader.GetValue(0).ToString();
+            }
+            reader.Close();
+            return ma;
+        }
     }
 }

@@ -46,36 +46,32 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(31, 34);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(46, 52);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(47, 13);
+            this.label1.Size = new System.Drawing.Size(68, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Mã NSX";
             // 
             // txtMaNSX
             // 
-            this.txtMaNSX.Location = new System.Drawing.Point(89, 29);
-            this.txtMaNSX.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtMaNSX.Location = new System.Drawing.Point(134, 45);
             this.txtMaNSX.Name = "txtMaNSX";
-            this.txtMaNSX.Size = new System.Drawing.Size(117, 20);
+            this.txtMaNSX.Size = new System.Drawing.Size(174, 26);
             this.txtMaNSX.TabIndex = 1;
             // 
             // txtTenNSX
             // 
-            this.txtTenNSX.Location = new System.Drawing.Point(377, 29);
-            this.txtTenNSX.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTenNSX.Location = new System.Drawing.Point(566, 45);
             this.txtTenNSX.Name = "txtTenNSX";
-            this.txtTenNSX.Size = new System.Drawing.Size(117, 20);
+            this.txtTenNSX.Size = new System.Drawing.Size(174, 26);
             this.txtTenNSX.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(320, 34);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(480, 52);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(51, 13);
+            this.label2.Size = new System.Drawing.Size(73, 20);
             this.label2.TabIndex = 2;
             this.label2.Text = "Tên NSX";
             // 
@@ -85,12 +81,11 @@
             this.DataGridView_NoiSX.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaNSX,
             this.TenNSX});
-            this.DataGridView_NoiSX.Location = new System.Drawing.Point(35, 103);
-            this.DataGridView_NoiSX.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.DataGridView_NoiSX.Location = new System.Drawing.Point(52, 158);
             this.DataGridView_NoiSX.Name = "DataGridView_NoiSX";
             this.DataGridView_NoiSX.RowHeadersWidth = 62;
             this.DataGridView_NoiSX.RowTemplate.Height = 28;
-            this.DataGridView_NoiSX.Size = new System.Drawing.Size(458, 96);
+            this.DataGridView_NoiSX.Size = new System.Drawing.Size(687, 148);
             this.DataGridView_NoiSX.TabIndex = 4;
             this.DataGridView_NoiSX.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.DataGridView_NoiSX.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
@@ -113,10 +108,9 @@
             // 
             // btnThem
             // 
-            this.btnThem.Location = new System.Drawing.Point(0, 357);
-            this.btnThem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnThem.Location = new System.Drawing.Point(0, 549);
             this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(65, 24);
+            this.btnThem.Size = new System.Drawing.Size(98, 37);
             this.btnThem.TabIndex = 5;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
@@ -124,10 +118,9 @@
             // 
             // btnThoat
             // 
-            this.btnThoat.Location = new System.Drawing.Point(569, 357);
-            this.btnThoat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnThoat.Location = new System.Drawing.Point(854, 549);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(65, 24);
+            this.btnThoat.Size = new System.Drawing.Size(98, 37);
             this.btnThoat.TabIndex = 6;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
@@ -135,10 +128,9 @@
             // 
             // btnSua
             // 
-            this.btnSua.Location = new System.Drawing.Point(270, 357);
-            this.btnSua.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSua.Location = new System.Drawing.Point(405, 549);
             this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(65, 24);
+            this.btnSua.Size = new System.Drawing.Size(98, 37);
             this.btnSua.TabIndex = 7;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
@@ -146,10 +138,9 @@
             // 
             // btnXoa
             // 
-            this.btnXoa.Location = new System.Drawing.Point(131, 357);
-            this.btnXoa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnXoa.Location = new System.Drawing.Point(196, 549);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(65, 24);
+            this.btnXoa.Size = new System.Drawing.Size(98, 37);
             this.btnXoa.TabIndex = 8;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
@@ -157,10 +148,9 @@
             // 
             // btnLuu
             // 
-            this.btnLuu.Location = new System.Drawing.Point(429, 357);
-            this.btnLuu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLuu.Location = new System.Drawing.Point(644, 549);
             this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(65, 24);
+            this.btnLuu.Size = new System.Drawing.Size(98, 37);
             this.btnLuu.TabIndex = 9;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.UseVisualStyleBackColor = true;
@@ -168,9 +158,9 @@
             // 
             // frmNoiSX
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(682, 435);
+            this.ClientSize = new System.Drawing.Size(1023, 669);
             this.Controls.Add(this.btnLuu);
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.btnSua);
@@ -181,9 +171,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtMaNSX);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmNoiSX";
-            this.Text = "frmNoiSX";
+            this.Text = "Nơi Sản Xuất";
             this.Load += new System.EventHandler(this.frmNoiSX_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView_NoiSX)).EndInit();
             this.ResumeLayout(false);
