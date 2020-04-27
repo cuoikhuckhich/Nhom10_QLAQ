@@ -88,10 +88,7 @@ namespace QLyBanHangQuanAo
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            txtMaKH.Text = "";
-            txtTenKH.Text = "";
-            txtDiaChi.Text = "";
-            txtDienThoai.Text = "";
+            resetvalues();
             txtMaKH.Enabled = true;
         }
 
