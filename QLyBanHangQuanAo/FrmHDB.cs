@@ -168,7 +168,7 @@ namespace QLyBanHangQuanAo
         {
             txtMaKhach.Text = dataGridView_HDB.CurrentRow.Cells["Makhach"].Value.ToString();
             txtMaNV.Text = dataGridView_HDB.CurrentRow.Cells["MaNV"].Value.ToString();
-            dtpNgayban.Value = (DateTime)dataGridView_HDB.CurrentRow.Cells["Ngayban"].Value;
+            dtpNgayban.Value = Convert.ToDateTime(dataGridView_HDB.CurrentRow.Cells["Ngayban"].Value.ToString());
             txtSoHDBan.Text = dataGridView_HDB.CurrentRow.Cells["SoHDB"].Value.ToString();
             txtTongTien.Text = dataGridView_HDB.CurrentRow.Cells["Tongtien"].Value.ToString();
             txtSoHDBan.Enabled = false;

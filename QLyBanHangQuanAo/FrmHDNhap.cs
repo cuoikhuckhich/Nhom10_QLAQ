@@ -47,7 +47,7 @@ namespace QLyBanHangQuanAo
         {
             txtMaNCC.Text = dataGridView_HDNhap.CurrentRow.Cells["MaNCC"].Value.ToString();
             txtMaNV.Text = dataGridView_HDNhap.CurrentRow.Cells["MaNV"].Value.ToString();
-            dtpNgaynhap.Value =(DateTime )dataGridView_HDNhap.CurrentRow.Cells["Ngaynhap"].Value;
+            dtpNgaynhap.Value =Convert.ToDateTime(dataGridView_HDNhap.CurrentRow.Cells["Ngaynhap"].Value.ToString());
             txtSoHDNhap.Text = dataGridView_HDNhap.CurrentRow.Cells["SoHDN"].Value.ToString();
             txtTongTien.Text = dataGridView_HDNhap.CurrentRow.Cells["TongTien"].Value.ToString();
             txtSoHDNhap.Enabled = false;

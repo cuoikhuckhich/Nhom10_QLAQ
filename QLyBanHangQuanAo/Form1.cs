@@ -174,5 +174,12 @@ namespace QLyBanHangQuanAo
             thdb.MdiParent = this;
             thdb.Show();
         }
+
+        private void báoCáoDSHóaĐơnBánToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmBaoCaoHDB  bcb = new FrmBaoCaoHDB();
+            bcb.MdiParent = this;
+            bcb.Show();
+        }
     }
 }

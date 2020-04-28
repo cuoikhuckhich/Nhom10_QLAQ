@@ -82,6 +82,12 @@
     <Compile Include="FrmBaoCao.Designer.cs">
       <DependentUpon>FrmBaoCao.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmBaoCaoHDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBaoCaoHDB.designer.cs">
+      <DependentUpon>FrmBaoCaoHDB.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmbaocaohdn.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -212,6 +218,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmBaoCao.resx">
       <DependentUpon>FrmBaoCao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBaoCaoHDB.resx">
+      <DependentUpon>FrmBaoCaoHDB.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmbaocaohdn.resx">
       <DependentUpon>frmbaocaohdn.cs</DependentUpon>

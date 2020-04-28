@@ -140,8 +140,13 @@ namespace QLyBanHangQuanAo
             slmoi = sl + Convert.ToDouble(txtSoluong.Text);
             sql = "UPDATE SanPham SET Soluong =" + slmoi + " WHERE Maquanao= N'" + cboMaquanao.SelectedValue.ToString() + "'";
             Functions.RunSql(sql);
-       
+            // Cập nhật lại giá nhập của sản phẩm vào bảng tblSP
+            sql = "UPDATE SanPham SET Đongianhap =" + txtDongia.Text + " WHERE Maquanao= N'" + cboMaquanao.SelectedValue.ToString() + "'";
+            Functions.RunSql(sql);
             resetvalue();
+            btnXoa.Enabled = true;
+            btnThem.Enabled = true;
+            
             resetvalue();
         }
 
