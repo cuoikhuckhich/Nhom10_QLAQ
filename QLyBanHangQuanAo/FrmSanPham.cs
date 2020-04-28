@@ -266,6 +266,16 @@ namespace QLyBanHangQuanAo
                 txtAnh.Text = duonglink.FileName;
             }    
         }
+
+        private void txtĐongianhap_TextChanged(object sender, EventArgs e)
+        {
+            double dgn, dgb;
+            if (txtĐongianhap.Text == "") dgn = 0;
+            else dgn = Convert.ToDouble(txtĐongianhap.Text);
+            dgb = dgn * 1.1;
+            txtĐongiaban.Text = dgb.ToString();
+            loadDataGridView();
+        }
     }
 }
    

@@ -167,5 +167,12 @@ namespace QLyBanHangQuanAo
             bc.MdiParent = this;
             bc.Show();
         }
+
+        private void hóaĐơnBánToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FrmTimHDB thdb = new FrmTimHDB();
+            thdb.MdiParent = this;
+            thdb.Show();
+        }
     }
 }
